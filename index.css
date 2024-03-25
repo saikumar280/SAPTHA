@@ -92,3 +92,52 @@ footer {
 a {
     text-align: center;
 }
+h1, h2, h3 {
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    margin-bottom: 40px;
+}
+.section h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+.section p {
+    color: #777;
+    line-height: 1.6;
+}
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.service-item h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+.service-item p {
+    color: #777;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: #555;
+}
