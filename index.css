@@ -1,143 +1,204 @@
-header {
-    background-image: linear-gradient(to right, rgb(178, 127, 127), rgb(240, 214, 214));
-    position: fixed;
+html {
+    scroll-behavior: smooth;
+  }
+
+
+@media screen and (min-width: 426px) {
+    header{
+        height: 100px;
+        border-radius: 10px;
+    }
+    .logodiv{
+        width: 100px;
+    }
+    #logo{
+        width: 90px;
+    }
+    .links{
+        font-size: x-large;
+    }
+    .dropdown-content {
+        font-size: large;
+        width: 150px;
+    }
+    .mainsection{
+        margin-top: 100px;
+    }
+    #firmname{
+        margin-top: 30px;
+        height: 200px;
+        border-radius: 15px;
+        font-size: 100px;
+    }
+    .content{
+        margin: 0;
+        position: relative;
+        left: 0px;
+        width: 6%;
+        background-color: aliceblue;
+        height: 90%;
+    }
+    .content b{
+        margin: 0;
+        font-size: 20px;
+        transform: rotate(-90deg);
+    }
+    .partitions{
+        width: 90%;
+        height: 300px;
+        margin-top: 30px;
+        flex-direction: row;
+    }
+    .posts{
+        width: 260px;
+        height: 260px;
+        margin-left:4% ;
+        margin-right:4% ;
+    }
+}
+@media screen and (max-width: 426px) {
+    header{
+        height: 50px;
+        border-radius: 5px;
+    }
+    .logodiv{
+        width: 50px;
+    }
+    #logo{
+        width: 45px;
+    }
+    .links{
+        font-size:9px;
+    }
+    .dropdown-content {
+        width: 80px;
+        font-size: 9px;
+    }
+    #titlediv{
+        width: 80%;
+    }
+    .mainsection{
+        margin-top: 50px;
+    }
+    #firmname{
+        margin-top: 25px;
+        height: 70px;
+        border-radius: 10px;
+        font-size: 33.8px;
+    }
+    .content{
+        top: 10;
+        width: 90%;
+        background-color: aliceblue;
+        height: 40px;
+    }
+    .partitions{
+        width: 80%;
+        height: 600px;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    .posts{
+        width: 160px;
+        height: 160px;
+        margin-top:4% ;
+        margin-bottom:4% ;
+    }
+}
+header{
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(217, 194, 194);
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0;
     align-items: center;
-    justify-content: center; /* Vertically center align */
-    width: 100vw;
-    height: 120px;
-    box-shadow: 1px 1px 8px 1px rgb(70, 67, 67);
-}
-.logodiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 10%;
-}
-#logo{
-    float: left;
-    width: 120px;
-
 }
 #titlediv{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 90%;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    background-color: rgb(197, 169, 169);
+    box-shadow: 5px 10px 25px 0.1px rgb(129, 123, 123);
+    border-radius: 10px;
 }
-#title {
-    margin: 0 auto;
-    font-size: xx-large;
-    font-family: Papyrus;
-    font-weight: bold;
-}
-
-#tag {
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium';
-}
-
-.navigator {
+.logodiv{
+    height: 100%;
+    display: flex;
     align-items: center;
-    width: 10vw;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-top: 120px;
+    justify-content: center;
 }
-
-.sidebars {
-    margin-top: 120px;
-    float: right;
-    width: 10vw;
-    height: 100vh;
-}
-
-#right {
-    float: right;
-}
-
-#left {
-    float: left;
-}
-
-#rightnav {
-    background-image: linear-gradient(to right, rgb(243, 210, 210), rgb(240, 214, 214));
-}
-
-#leftnav {
-    background-image: linear-gradient(to right, rgb(178, 127, 127), rgb(203, 160, 160));
-}
-
-#firstsection {
-    text-align: center;
-    height: 200vh;
-    background-image: linear-gradient(rgb(213, 203, 213), rgb(236, 231, 237));
-}
-
-
-
-body {
-    margin: 0;
-}
-
-footer {
-    width: 100%;
-    height: 100vh;
-}
-
-a {
-    text-align: center;
-}
-h1, h2, h3 {
-    color: #333;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.section {
-    margin-bottom: 40px;
-}
-.section h2 {
-    color: #555;
-    margin-bottom: 20px;
-}
-.section p {
-    color: #777;
-    line-height: 1.6;
-}
-.service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.service-item {
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-.service-item h3 {
-    color: #555;
-    margin-bottom: 10px;
-}
-.service-item p {
-    color: #777;
-}
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+.links{
+    margin-left: 2%;
+    margin-right: 2%;
+    color: black;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    font-family: Cursive, Brush Script MT;
 }
-.cta-button:hover {
-    background-color: #555;
+.dropdown {
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    display: inline-block;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(217, 203, 203);
+    font-family: Cursive, Brush Script MT;
+    box-shadow: 5px 10px 25px 0.1px rgb(72, 71, 71);
+    border-radius: 10px;
+    z-index: 1;
+} 
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.mainsection{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#firmname{
+    width: 90%;
+    background-color: rgb(228, 222, 215);
+    box-shadow: 5px 10px 25px 0.1px rgb(72, 71, 71);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(32, 6, 51);
+    font-family: Cursive, Brush Script MT;
+}
+.partitions{
+    justify-content: center;
+    background-color: rgb(202, 179, 150);
+    box-shadow: 5px 10px 25px 0.1px rgb(72, 71, 71);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.content{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.posts{
+    background-color: rgb(125, 202, 177);
 }
