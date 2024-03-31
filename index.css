@@ -19,6 +19,7 @@ html {
     }
     .dropdown-content {
         width: 80px;
+        font-family: Times New Roman !important;
         font-size: 9px;
     }
     #titlediv{
