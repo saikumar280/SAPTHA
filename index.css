@@ -1,61 +1,7 @@
 html {
     scroll-behavior: smooth;
-  }
-
-
-@media screen and (min-width: 426px) {
-    header{
-        height: 100px;
-        border-radius: 10px;
-    }
-    .logodiv{
-        width: 100px;
-    }
-    #logo{
-        width: 90px;
-    }
-    .links{
-        font-size: x-large;
-    }
-    .dropdown-content {
-        font-size: large;
-        width: 150px;
-    }
-    .mainsection{
-        margin-top: 100px;
-    }
-    #firmname{
-        margin-top: 30px;
-        height: 200px;
-        border-radius: 15px;
-        font-size: 100px;
-    }
-    .content{
-        margin: 0;
-        position: relative;
-        left: 0px;
-        width: 6%;
-        background-color: aliceblue;
-        height: 90%;
-    }
-    .content b{
-        margin: 0;
-        font-size: 20px;
-        transform: rotate(-90deg);
-    }
-    .partitions{
-        width: 90%;
-        height: 300px;
-        margin-top: 30px;
-        flex-direction: row;
-    }
-    .posts{
-        width: 260px;
-        height: 260px;
-        margin-left:4% ;
-        margin-right:4% ;
-    }
 }
+
 @media screen and (max-width: 426px) {
     header{
         height: 50px;
@@ -68,14 +14,17 @@ html {
         width: 45px;
     }
     .links{
-        font-size:9px;
+        font-size:12px;
     }
     .dropdown-content {
         width: 80px;
         font-size: 9px;
     }
     #titlediv{
-        width: 80%;
+        width: 100%!important;
+    }
+    #nonediv{
+        width: 0px!important;
     }
     .mainsection{
         margin-top: 50px;
@@ -114,6 +63,60 @@ header{
     position: fixed;
     top: 0;
     align-items: center;
+}
+
+@media screen and (min-width: 426px) {
+    header{
+        height: 100px;
+        border-radius: 10px;
+    }
+    .logodiv{
+        width: 100px;
+    }
+    #logo{
+        width: 90px;
+    }
+    .links{
+        font-size: x-large;
+    }
+    .dropdown-content {
+        font-size: large;
+        width: 150px;
+    }
+    .mainsection{
+        margin-top: 100px;
+    }
+    #firmname{
+        margin-top: 30px;
+        height: 200px;
+        border-radius: 15px;
+        font-size: 80px;
+    }
+    .content{
+        margin: 0;
+        position: relative;
+        left: 0px;
+        width: 6%;
+        background-color: aliceblue;
+        height: 90%;
+    }
+    .content b{
+        margin: 0;
+        font-size: 20px;
+        transform: rotate(-90deg);
+    }
+    .partitions{
+        width: 90%;
+        height: 300px;
+        margin-top: 30px;
+        flex-direction: row;
+    }
+    .posts{
+        width: 260px;
+        height: 260px;
+        margin-left:4% ;
+        margin-right:4% ;
+    }
 }
 #titlediv{
     display: flex;
