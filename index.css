@@ -206,7 +206,7 @@ header{
 }
 .content{
     display: flex;
-
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
 }
