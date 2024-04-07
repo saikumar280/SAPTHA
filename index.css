@@ -214,7 +214,7 @@ header{
     background-color: rgb(125, 202, 177);
     border-radius: 10px;
 }
-.imagesClass{
+.imagesClass{   
     object-fit: cover;
     width: 100%;
     height: 100%;
